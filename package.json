@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "tailwindcss-watch": "npx tailwindcss -i ./src/css/input.css -o ./site/static/docs/4.6/assets/css/tailwindcss.css --watch",
-    "tailwindcss": "npx tailwindcss -i ./src/css/input.css -o ./site/static/docs/4.6/assets/css/tailwindcss.css",
+    "tailwindcss": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/tailwindcss.css",
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-minify",
