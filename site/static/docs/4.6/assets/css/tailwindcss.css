@@ -1173,61 +1173,89 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+p {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
 .btn-primary {
-  background-color: #007bff;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 123 255 / var(--tw-bg-opacity));
 }
 
 .btn-secondary {
-  background-color: #6c757d;
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 117 125 / var(--tw-bg-opacity));
 }
 
 .btn-success {
-  background-color: #28a745;
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 167 69 / var(--tw-bg-opacity));
 }
 
 .btn-info {
-  background-color: #17a2b8;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 162 184 / var(--tw-bg-opacity));
 }
 
 .btn-warning {
-  background-color: #ffc107;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 193 7 / var(--tw-bg-opacity));
 }
 
 .btn-danger {
-  background-color: #dc3545;
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 53 69 / var(--tw-bg-opacity));
 }
 
 .btn-light {
-  background-color: #f8f9fa;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity));
 }
 
 .btn-dark {
-  background-color: #343a40;
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 58 64 / var(--tw-bg-opacity));
 }
 
-.jumbotron, .breadcrumb, .btn, .btn-lg, .btn-group-lg > .btn, .btn-group-sm > .btn, .btn-clipboard, .dropdown-menu, .card, .input-group-text {
+.alert, .breadcrumb, .dropdown-menu, .jumbotron, .list-group, .modal-content, .progress {
   border-radius: 0.5rem;
 }
 
-.form-control, .custom-select, .custom-file-label {
+.btn-clipboard, .btn-group-lg > .btn, .btn-group-sm > .btn, .btn-lg, .btn {
   border-radius: 0.5rem;
 }
 
-.alert {
+.toast {
   border-radius: 0.5rem;
 }
 
-.list-group {
-  border-radius: 0.5rem;
-}
-
-.nav-tabs .nav-link {
+.toast-header {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
 .nav-pills .nav-link {
   border-radius: 0.5rem;
+}
+
+.nav-tabs  .nav-link {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.card > .list-group:last-child {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.card > .list-group:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .card-img, .card-img-top {
@@ -1249,36 +1277,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.card > .list-group:last-child {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-
-.card > .list-group:first-child {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-p {
-  margin-top: 0px;
-  margin-bottom: 1rem;
-}
-
-.input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn {
+.form-control, .custom-select, .custom-file-label, .input-group-text {
   border-radius: 0.5rem;
 }
 
-.input-group-lg > .form-control, .input-group-lg > .custom-select, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
+.input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn, .input-group-lg > .form-control, .input-group-lg > .custom-select, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
   border-radius: 0.5rem;
 }
 
 .input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-}
-
-.modal-content {
-  border-radius: 0.5rem;
 }
 
 .pagination {
@@ -1327,15 +1336,6 @@ p {
 .popover-body {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-}
-
-.progress, .toast {
-  border-radius: 0.5rem;
-}
-
-.toast-header {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {

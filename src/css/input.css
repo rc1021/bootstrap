@@ -2,46 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn-primary { background-color: #007bff; }
-.btn-secondary { background-color: #6c757d; }
-.btn-success { background-color: #28a745; }
-.btn-info { background-color: #17a2b8; }
-.btn-warning { background-color: #ffc107; }
-.btn-danger { background-color: #dc3545; }
-.btn-light { background-color: #f8f9fa; }
-.btn-dark { background-color: #343a40; }
-
-.jumbotron, .breadcrumb, .btn, .btn-lg, .btn-group-lg > .btn, .btn-group-sm > .btn, .btn-clipboard, .dropdown-menu, .card, .input-group-text { @apply rounded-lg }
-.form-control, .custom-select, .custom-file-label { @apply rounded-lg }
-
-.alert { @apply rounded-lg }
-.list-group { @apply rounded-lg }
-
-.nav-tabs .nav-link { @apply rounded-t-lg }
+p { @apply mt-0 mb-4 }
+.btn-primary { @apply bg-primary-500 }
+.btn-secondary { @apply bg-secondary-500 }
+.btn-success { @apply bg-success-500 }
+.btn-info { @apply bg-info-500 }
+.btn-warning { @apply bg-warning-500 }
+.btn-danger { @apply bg-danger-500 }
+.btn-light { @apply bg-light-500 }
+.btn-dark { @apply bg-dark-500 }
+.alert, .breadcrumb, .dropdown-menu, .jumbotron, .list-group, .modal-content, .progress { @apply rounded-lg }
+.btn-clipboard, .btn-group-lg > .btn, .btn-group-sm > .btn, .btn-lg, .btn { @apply rounded-lg }
+.toast { @apply rounded-lg }
+.toast-header { @apply rounded-t-lg }
 .nav-pills .nav-link { @apply rounded-lg }
-
-.card-img, .card-img-top { @apply rounded-t-lg }
-.card-header { @apply p-2 }
-.card-title { @apply mb-auto }
-.card-body { @apply space-y-3 }
+.nav-tabs  .nav-link { @apply rounded-t-lg }
+.card { @apply rounded-lg }
 .card > .list-group:last-child { @apply rounded-b-lg }
 .card > .list-group:first-child { @apply rounded-t-lg }
-
-p { @apply mt-0 mb-4 }
-
-.input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn {
-  @apply rounded-lg
-}
-
-.input-group-lg > .form-control, .input-group-lg > .custom-select, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn {
-  @apply rounded-lg
-}
-
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
-  @apply rounded-r-none
-}
-
-.modal-content { @apply rounded-lg }
+.card-img, .card-img-top { @apply rounded-t-lg }
+.card-header { @apply p-2 }
+.card-title  { @apply mb-auto }
+.card-body   { @apply space-y-3 }
+.form-control, .custom-select, .custom-file-label, .input-group-text { @apply rounded-lg }
+.input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn,
+.input-group-lg > .form-control, .input-group-lg > .custom-select, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn { @apply rounded-lg }
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) { @apply rounded-r-none }
 .pagination { @apply rounded-lg }
 .page-item:first-child .page-link { @apply rounded-l-lg }
 .page-item:last-child .page-link { @apply rounded-r-lg }
@@ -49,10 +35,6 @@ p { @apply mt-0 mb-4 }
 .pagination-lg .page-item:last-child .page-link { @apply rounded-r-lg }
 .pagination-sm .page-item:first-child .page-link { @apply rounded-l-lg }
 .pagination-sm .page-item:last-child .page-link { @apply rounded-r-lg }
-
 .popover { @apply rounded-lg }
 .popover-header { @apply rounded-t-lg }
 .popover-body { @apply rounded-b-lg }
-
-.progress, .toast { @apply rounded-lg }
-.toast-header { @apply rounded-t-lg }
