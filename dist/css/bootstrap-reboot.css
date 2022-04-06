@@ -28,7 +28,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #0f172a;
   text-align: left;
   background-color: #fff;
 }
@@ -56,11 +56,9 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -123,13 +121,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #3b82f6;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #0a59da;
   text-decoration: underline;
 }
 
@@ -179,7 +177,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #475569;
   text-align: left;
   caption-side: bottom;
 }
@@ -322,4 +320,5 @@ template {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.css.map */
