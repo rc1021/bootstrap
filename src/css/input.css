@@ -12,23 +12,37 @@ p { @apply mt-0 mb-4 }
 .btn-light { @apply bg-light-500 }
 .btn-dark { @apply bg-dark-500 }
 .alert, .breadcrumb, .dropdown-menu, .jumbotron, .list-group, .modal-content, .progress { @apply rounded-lg }
-.btn-clipboard, .btn-group-lg > .btn, .btn-group-sm > .btn, .btn-lg, .btn { @apply rounded-lg }
+.alert, .breadcrumb, .jumbotron, .list-group { @apply py-1.5 px-3 }
+.dropdown-menu { @apply py-1 }
+.dropdown-menu .dropdown-item { @apply px-4 }
+.dropdown-menu .dropdown-divider { @apply my-0.5 }
+.btn-clipboard, .btn { @apply rounded-lg py-0.5 px-2 }
+.btn-group-lg > .btn, .btn-lg { @apply rounded-lg py-0.5 px-2 }
+.btn-group-sm > .btn, .btn-sm { @apply rounded-lg py-0.5 px-2 }
 .toast { @apply rounded-lg }
 .toast-header { @apply rounded-t-lg }
+.nav-link { @apply py-1 px-2 }
 .nav-pills .nav-link { @apply rounded-lg }
 .nav-tabs  .nav-link { @apply rounded-t-lg }
 .card { @apply rounded-lg }
-.card > .list-group:last-child { @apply rounded-b-lg }
-.card > .list-group:first-child { @apply rounded-t-lg }
+.card > .list-group, .list-group { @apply rounded-none p-0 }
+.card > .list-group:last-child, .list-group:last-child { @apply rounded-b-lg }
+.card > .list-group:first-child, .list-group:first-child { @apply rounded-t-lg }
+.card > .list-group > .list-group-item, .list-group > .list-group-item { @apply p-2 px-4 }
 .card-img, .card-img-top { @apply rounded-t-lg }
-.card-header { @apply p-2 }
+.card-header { @apply p-3 px-4 }
+.card-header .btn { @apply p-0 }
+.card-body, .card-footer { @apply p-2 px-4 }
 .card-title  { @apply mb-auto }
-.card-body   { @apply space-y-3 }
-.form-control, .custom-select, .custom-file-label, .input-group-text { @apply rounded-lg }
+.card-body   { @apply space-y-2 }
+.modal-header, .modal-body, .modal-footer { @apply p-3 px-4 }
+.form-control, .custom-select, .custom-file-label, .input-group-text, textarea.form-control { @apply rounded-lg py-0.5 px-2 h-fit }
+.custom-file, .custom-file-input, .input-group-prepend > *, .input-group-append > * { @apply h-auto }
 .input-group-sm > .form-control, .input-group-sm > .custom-select, .input-group-sm > .input-group-prepend > .input-group-text, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-append > .btn,
 .input-group-lg > .form-control, .input-group-lg > .custom-select, .input-group-lg > .input-group-prepend > .input-group-text, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-append > .btn { @apply rounded-lg }
 .input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn, .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn, .input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text, .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) { @apply rounded-r-none }
 .pagination { @apply rounded-lg }
+.page-item .page-link { @apply py-0.5 px-2 }
 .page-item:first-child .page-link { @apply rounded-l-lg }
 .page-item:last-child .page-link { @apply rounded-r-lg }
 .pagination-lg .page-item:first-child .page-link { @apply rounded-l-lg }
